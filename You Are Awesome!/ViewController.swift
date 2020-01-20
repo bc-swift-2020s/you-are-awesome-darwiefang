@@ -18,9 +18,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func messageLabelPressed(_ sender: UIButton) {
-        messageLabel.text = "You Are Fabulous!"
-  
-        imageView.image = UIImage (named: "image0")
+        
+        if messageLabel.text == "You Are Fabulous!" {
+            messageLabel.text = "You Are Great!"
+            imageView.image = UIImage (named: "image1")
+            
+        } else {
+            messageLabel.text = "You Are Fabulous!"
+            imageView.image = UIImage (named: "image0")
+        }
     }
     
     @IBOutlet weak var messageLabel: UILabel!
