@@ -13,6 +13,7 @@ class ViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        messageLabel.text = ""
         // Do any additional setup after loading the view.
     }
 
