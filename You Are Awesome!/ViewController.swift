@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
+  var imageNumber = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         messageLabel.text = ""
@@ -18,21 +20,32 @@ class ViewController: UIViewController {
     }
     
     @IBAction func messageLabelPressed(_ sender: UIButton) {
-       let fabulousMessage = "You Are Fabulous!"
-       let greatMessage = "You Are Great!"
-       let bombMessage = "You Are Da Bomb!"
+    
+        print(imageNumber)
+        // let imageName = "image" + String(imageNumber)
+       let imageName = "image\(imageNumber)"
+        imageView.image = UIImage(named: imageName)
+        imageNumber = imageNumber + 1
+        if imageNumber == 10
+        { imageNumber = 0
+    }
         
-        if messageLabel.text == fabulousMessage {
-            messageLabel.text = greatMessage
-            imageView.image = UIImage (named: "image1")
-            
-        } else if messageLabel.text == greatMessage {
-            messageLabel.text = bombMessage
-            imageView.image = UIImage (named: "image2")
-        } else {
-            messageLabel.text = fabulousMessage
-            imageView.image = UIImage (named: "image0")
-        }
+        
+        //       let fabulousMessage = "You Are Fabulous!"
+        //       let greatMessage = "You Are Great!"
+        //       let bombMessage = "You Are Da Bomb!"
+        //
+        //        if messageLabel.text == fabulousMessage {
+        //            messageLabel.text = greatMessage
+        //            imageView.image = UIImage (named: "image1")
+        //
+        //        } else if messageLabel.text == greatMessage {
+        //            messageLabel.text = bombMessage
+        //            imageView.image = UIImage (named: "image2")
+        //        } else {
+        //            messageLabel.text = fabulousMessage
+        //            imageView.image = UIImage (named: "image0")
+        //        }
     }
     
     @IBOutlet weak var messageLabel: UILabel!
