@@ -13,6 +13,7 @@
 		4833EB4623CCEAF600018C95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4833EB4423CCEAF600018C95 /* Main.storyboard */; };
 		4833EB4823CCEAF800018C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4833EB4723CCEAF800018C95 /* Assets.xcassets */; };
 		4833EB4B23CCEAF800018C95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4833EB4923CCEAF800018C95 /* LaunchScreen.storyboard */; };
+		4853C8D523E131E300D9D9C6 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 4853C8D423E131E300D9D9C6 /* Sounds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4833EB4723CCEAF800018C95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4833EB4A23CCEAF800018C95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4833EB4C23CCEAF800018C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4853C8D423E131E300D9D9C6 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sounds; path = ../../../Sounds; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			children = (
 				4833EB3D23CCEAF600018C95 /* You Are Awesome! */,
 				4833EB3C23CCEAF600018C95 /* Products */,
+				4853C8D423E131E300D9D9C6 /* Sounds */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +130,7 @@
 			files = (
 				4833EB4B23CCEAF800018C95 /* LaunchScreen.storyboard in Resources */,
 				4833EB4823CCEAF800018C95 /* Assets.xcassets in Resources */,
+				4853C8D523E131E300D9D9C6 /* Sounds in Resources */,
 				4833EB4623CCEAF600018C95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
