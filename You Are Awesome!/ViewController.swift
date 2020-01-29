@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
-  var imageNumber = 0
-    var messageNumber = 0
+  var imageNumber = -1
+    var messageNumber = -1
     let totalNumberOfImages = 9
     
     
@@ -29,39 +29,24 @@ class ViewController: UIViewController {
                     "Nice",
         "Genius Bar",
         "Johnny Ive"]
-        messageLabel.text = messages[Int.random(in: 0...messages.count-1)]
-        imageView.image = UIImage(named: "image\(Int.random(in: 0...totalNumberOfImages))")
         
-       // messageLabel.text = messages[messageNumber]
-       // messageNumber += 1
-       // if messageNumber == messages.count {
-       // messageNumber = 0
-       // }
+        var newMessageNumber = Int.random(in: 0...messages.count-1)
+        repeat {
+            
+            newMessageNumber = Int.random(in: 0...messages.count-1)
+        }
+        while messageNumber == newMessageNumber
+        
+        messageNumber = newMessageNumber
+        messageLabel.text = messages[messageNumber]
+        
 
-        // let imageName = "image" + String(imageNumber)
-    //   let imageName = "image\(imageNumber)"
-     //   imageView.image = UIImage(named: imageName)
-    //    imageNumber = imageNumber + 1
-     //   if imageNumber == 10
-   //     { imageNumber = 0
-   // }
+        var newImageNumber = Int.random(in: 0...totalNumberOfImages)
+        while imageNumber == newImageNumber {
+           newImageNumber = Int.random(in: 0...totalNumberOfImages)
+        }
         
-        
-        //       let fabulousMessage = "You Are Fabulous!"
-        //       let greatMessage = "You Are Great!"
-        //       let bombMessage = "You Are Da Bomb!"
-        //
-        //        if messageLabel.text == fabulousMessage {
-        //            messageLabel.text = greatMessage
-        //            imageView.image = UIImage (named: "image1")
-        //
-        //        } else if messageLabel.text == greatMessage {
-        //            messageLabel.text = bombMessage
-        //            imageView.image = UIImage (named: "image2")
-        //        } else {
-        //            messageLabel.text = fabulousMessage
-        //            imageView.image = UIImage (named: "image0")
-        //        }
+    
     }
     
     @IBOutlet weak var messageLabel: UILabel!
